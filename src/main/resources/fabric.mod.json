@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "hearthian-mod-template",
+	"id": "accelerating-happy-ghasts",
 	"version": "${version}",
 	"name": "Hearthian mod template",
 	"description": "Mod description",
@@ -12,26 +12,22 @@
 		"sources": "https://github.com/HearthianDev/heartian-mod-template"
 	},
 	"license": "GPL-3.0",
-	"icon": "assets/hearthian-mod-template/icon.png",
+	"icon": "assets/accelerating-happy-ghasts/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.hearthian.template.HearthianModTemplate"
+			"net.hearthian.acceleratingHappyGhasts.AcceleratingHappyGhasts"
 		],
 		"client": [
-			"net.hearthian.template.HearthianModTemplateClient"
+			"net.hearthian.acceleratingHappyGhasts.AcceleratingHappyGhastsClient"
 		]
 	},
 	"mixins": [
-		"hearthian-mod-template.mixins.json",
-		{
-			"config": "hearthian-mod-template.client.mixins.json",
-			"environment": "client"
-		}
+		"accelerating-happy-ghasts.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.10",
-		"minecraft": "~1.21.4",
+		"minecraft": "~1.21.10",
 		"java": ">=21",
 		"fabric-api": "*"
 	},
